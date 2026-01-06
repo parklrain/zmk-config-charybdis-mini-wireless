@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis, layout_name: default_transform}
 layers:
-  default:
+  QWER:
   - ↹
   - Q
   - W
@@ -13,11 +13,11 @@ layers:
   - O
   - P
   - ⌫
-  - Ctrl
+  - Caps Lock
   - A
   - S
   - D
-  - {t: F, h: adjust}
+  - {t: F, h: FNC}
   - G
   - H
   - J
@@ -33,17 +33,17 @@ layers:
   - B
   - N
   - M
-  - ','
+  - {t: ',', h: SCROLL}
   - .
-  - /
+  - {t: /, h: SNIPE}
   - Shift
-  - {t: Esc, h: lower}
-  - {t: ␣, h: raise}
-  - {t: ↹, h: adjust}
-  - {t: ENTER, h: lower}
-  - {t: ⌫, h: raise}
-  - {t: ⌦, h: adjust}
-  lower:
+  - {t: Esc, h: NUM}
+  - {t: ␣, h: SYM}
+  - {t: ↹, h: FNC}
+  - {t: ENTER, h: NUM}
+  - {t: ⌫, h: SYM}
+  - {t: ⌦, h: FNC}
+  NUM:
   - {t: ▽, type: trans}
   - '['
   - '7'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  SYM:
   - {t: ▽, type: trans}
   - '{'
   - '&'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  FNC:
   - {t: ▽, type: trans}
   - Ctl+Q
   - Ctl+W
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  AUTO-MOUSE:
+  SYS:
   - {t: ▽, type: trans}
   - BT 1
   - BT 2
@@ -215,50 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  GAME:
-  - '1'
-  - ↹
-  - Q
-  - W
-  - E
-  - R
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: default, h: toggle}
-  - '2'
-  - Ctrl
-  - A
-  - S
-  - D
-  - F
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '3'
-  - Shift
-  - Z
-  - X
-  - C
-  - V
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - ␣
-  - LEFT ALT
-  - ''
-  - ''
-  - ''
-  SLOW:
+  SNIPE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -293,9 +250,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&tdtb2'
+  - ''
   - Left Click
   - Right Click
   - {t: ▽, type: trans}
@@ -334,148 +291,62 @@ layers:
   - Middle Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&tdtb2'
+  - ''
   - Left Click
   - Right Click
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  FBUTTONS_LAYER:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - {t: ▽, type: trans}
-  - RIGHT SHIFT
-  - Ctrl
-  - Alt
-  - Gui
-  - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  IDEA:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&open_find_files'
-  - {t: ▽, type: trans}
-  - F17
-  - {t: ▽, type: trans}
-  - '&intellij_open_terminal'
-  - '&rectangle_left_half'
-  - '&rectangle_right_half'
-  - '&intellij_rename'
-  - '&intellij_debug'
-  - '&intellij_run'
-  - '&go_back'
-  - '&go_forward'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F18
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&switch_windows'
-  - F16
-  - F23
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [16, 15]
   k: Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [15, 14]
   k: Ctrl
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [14, 13]
   k: Alt
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [17, 16]
   k: LWIN
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [19, 20]
   k: Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [20, 21]
   k: Ctrl
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [22, 21]
   k: Alt
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [18, 19]
   k: LWIN
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [16, 15, 14]
   k: Ctl+Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [15, 14, 13]
   k: Alt+Ctrl
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [16, 15, 13]
   k: Alt+Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [16, 15, 13, 14]
   k: Ctl+LWIN
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [19, 20, 21]
   k: Ctl+Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [20, 21, 22]
   k: Alt+Ctrl
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [19, 20, 22]
   k: Alt+Shift
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
 - p: [19, 20, 21, 22]
   k: Ctl+LWIN
-  l: [default, lower, raise, adjust]
+  l: [QWER, NUM, SYM, FNC]
